@@ -30,8 +30,9 @@ Claude Wrapper/
 │       │   └── ChatApp.jsx
 │       └── utils/
 │           └── api.js
-├── setup.bat                # One-click dependency install
-└── start.bat                # One-click server launcher
+├── setup.sh                 # POSIX dependency installer
+├── start.sh                 # POSIX server launcher
+└── ocr_requirements.txt     # Python OCR dependencies
 ```
 
 ## Quick Start
@@ -49,10 +50,17 @@ DOCUMENT_ROOT=D:/YourFolder
 
 If your PDFs are scanned images, run [ocr_full_dd.py](ocr_full_dd.py) once to generate `.ocr.txt` files next to each PDF. The server can read those text files directly, so scanned PDFs become available to Claude.
 
-### 2. Install Dependencies
-**Option A — Use the batch script:**
+To install the Python packages used by the OCR helpers, run:
+
+```bash
+pip install -r ocr_requirements.txt
 ```
-Double-click setup.bat
+
+### 2. Install Dependencies
+**Option A — Use the shell script:**
+```
+chmod +x setup.sh start.sh
+./setup.sh
 ```
 
 **Option B — Manual install:**
@@ -67,9 +75,9 @@ npm install
 ```
 
 ### 3. Start the Application
-**Option A — Use the batch script:**
+**Option A — Use the shell script:**
 ```
-Double-click start.bat
+./start.sh
 ```
 
 **Option B — Manual start:**
