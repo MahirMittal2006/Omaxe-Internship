@@ -101,4 +101,4 @@ Navigate to **http://localhost:5173** in your browser.
 |-------|------------|
 | Frontend | React 19, Vite, Tailwind CSS, React Router |
 | Backend | Node.js, Express, Anthropic SDK |
-| AI Model | Claude 3.5 Sonnet |
+| AI Model | Claude 3.5 Sonnet, Claude 4.6 Sonnet |
