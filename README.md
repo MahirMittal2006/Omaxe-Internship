@@ -1,4 +1,4 @@
-# NexusAI — Enterprise Claude Wrapper
+# Omaxe DMS AI — Enterprise Claude Wrapper
 
 A professional, full-stack chat application that serves as a secure wrapper for the Anthropic Claude API. Features enterprise-grade UI design with authentication, protected routing, and a real-time chat interface.
 
