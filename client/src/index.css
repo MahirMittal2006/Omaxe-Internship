@@ -1,0 +1,101 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Base resets and globals */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #0a0e13;
+  color: #e8ebf2;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(92, 124, 250, 0.3);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(92, 124, 250, 0.5);
+}
+
+/* Selection */
+::selection {
+  background: rgba(92, 124, 250, 0.3);
+  color: #ffffff;
+}
+
+/* Glassmorphism utility */
+@layer components {
+  .glass {
+    background: rgba(15, 20, 29, 0.7);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(92, 124, 250, 0.1);
+  }
+  .glass-light {
+    background: rgba(26, 32, 44, 0.5);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(92, 124, 250, 0.08);
+  }
+}
+
+/* Gradient text */
+.gradient-text {
+  background: linear-gradient(135deg, #5c7cfa 0%, #748ffc 50%, #91a7ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Smooth message rendering */
+.message-content p {
+  margin-bottom: 0.5em;
+}
+.message-content p:last-child {
+  margin-bottom: 0;
+}
+.message-content code {
+  background: rgba(92, 124, 250, 0.1);
+  padding: 0.15em 0.4em;
+  border-radius: 4px;
+  font-size: 0.875em;
+  font-family: 'SF Mono', 'Fira Code', monospace;
+}
+.message-content pre {
+  background: rgba(10, 14, 19, 0.8);
+  padding: 1em;
+  border-radius: 8px;
+  overflow-x: auto;
+  margin: 0.75em 0;
+  border: 1px solid rgba(92, 124, 250, 0.1);
+}
+.message-content pre code {
+  background: none;
+  padding: 0;
+}
+.message-content ul, .message-content ol {
+  padding-left: 1.5em;
+  margin: 0.5em 0;
+}
+.message-content li {
+  margin-bottom: 0.25em;
+}
