@@ -1,4 +1,4 @@
-# NexusAI — Enterprise Claude Wrapper
+# Omaxe DMS AI — Enterprise Claude Wrapper
 
 A professional, full-stack chat application that serves as a secure wrapper for the Anthropic Claude API. Features enterprise-grade UI design with authentication, protected routing, and a real-time chat interface.
 
@@ -109,4 +109,4 @@ Navigate to **http://localhost:5173** in your browser.
 |-------|------------|
 | Frontend | React 19, Vite, Tailwind CSS, React Router |
 | Backend | Node.js, Express, Anthropic SDK |
-| AI Model | Claude 3.5 Sonnet |
+| AI Model | Claude 3.5 Sonnet, Claude 4.6 Sonnet |
